@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import {appRoutes} from "./appRoutes";
 import {IRoute, TProtectRouteProps} from "../types";
 import ProtectedRoute from "./protectedRoute";
-import {useUser} from "../context/user/userProvider";
+import {useUser} from "../hooks/useUser";
 
 const RoutesWrapper = () => {
     const {user} = useUser();

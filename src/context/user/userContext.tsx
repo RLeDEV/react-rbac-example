@@ -12,7 +12,7 @@ export interface IUserContext {
     saveUser: (newUser: IUser) => void;
 };
 
-const PermissionContext =
+const UserContext =
     React.createContext<IUserContext | undefined>(undefined);
 
-export default PermissionContext;
+export default UserContext;

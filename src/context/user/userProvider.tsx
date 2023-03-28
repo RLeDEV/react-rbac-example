@@ -23,13 +23,3 @@ export const UserProvider: React.FC<TUserProviderProps> = ({
         </UserContext.Provider>
     );
 };
-
-export const useUser = () => {
-    const context = React.useContext(UserContext);
-
-    if (context === undefined) {
-        throw new Error('useUser must be used within a UserProvider');
-    }
-
-    return context;
-}

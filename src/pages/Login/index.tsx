@@ -1,11 +1,12 @@
 import React, {useState} from "react";
 import {useNavigate} from "react-router-dom";
 
-import {useUser} from "../../context/user/userProvider";
+import {useUser} from "../../hooks/useUser";
+import {IUser} from "../../context/user/userContext";
+
 import {PRIVILEGES_MOCKS} from "../../mocks/privileges";
 
 import * as style from './login.style';
-import {IUser} from "../../context/user/userContext";
 
 interface ICredentials {
     username: string;

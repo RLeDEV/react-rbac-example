@@ -3,7 +3,7 @@ import PermissionContext from './permissionContext';
 import { Features } from "../../enums";
 import { TPermission, IPermissionCache } from "../../types";
 
-type TProps = {
+type TPermissionProviderProps = {
   fetchPermission: (
     feature: Features,
     permission: TPermission
@@ -11,7 +11,7 @@ type TProps = {
   children: React.ReactNode | React.ReactFragment | React.ReactPortal;
 };
 
-export const PermissionProvider: React.FC<TProps> = ({
+export const PermissionProvider: React.FC<TPermissionProviderProps> = ({
   fetchPermission,
   children,
 }) => {

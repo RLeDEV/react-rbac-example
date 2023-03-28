@@ -3,7 +3,7 @@ import {FC} from "react";
 import {PermissionProvider} from "../../context/permission/permissionProvider";
 import {fetchPermissions, Restricted} from "../../components/Restricted/restricted";
 import {Features, Permissions} from "../../enums";
-import {useUser} from "../../context/user/userProvider";
+import {useUser} from "../../hooks/useUser";
 
 const Home: FC = () => {
     const {user} = useUser();

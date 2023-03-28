@@ -1,6 +1,6 @@
 import {Features} from "../enums";
 
-export type TPermission = 'read' | 'write' | 'publish' | 'disabled';
+export type TPermission = 'read' | 'write' | 'publish';
 
 export type TPrivileges = {
     [key in Features]: TPermission[];

@@ -3,7 +3,7 @@ import usePermission from "../../hooks/usePermission";
 import { Features, Permissions } from "../../enums";
 import { TPrivileges, IRestrictedProps } from "../../types";
 
-import * as style from './style';
+import * as style from './restricted.style';
 
 /**
  * @description A wrapper that secures a component that it allowed by permissions
@@ -11,7 +11,7 @@ import * as style from './style';
  * @param permission Requested permission
  * @param fallback Fallback component that could be in use when there is no match between requested permissions and defined permissions
  * @param loadingComponent Loader that will be shown in the meantime
- * @param children Component that should be shown according to user permissions
+ * @param children Component that should be shown according to user privileges
  * @constructor
  */
 export const Restricted: React.FC<IRestrictedProps> = ({
